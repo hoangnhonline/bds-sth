@@ -2,9 +2,9 @@
 //ini_set('display_errors', '1');
 class Frontend {
     function __construct() {
-		if($_SERVER['SERVER_NAME']=='localhost'){
+		if($_SERVER['SERVER_NAME']=='nhadat.dev'){
             mysql_connect('localhost', 'root', 'root') or die("Can't connect to server");
-               mysql_select_db('phongtro_sg') or die("Can't connect database");
+               mysql_select_db('batdongsan_sth_vn_8f') or die("Can't connect database");
         }else{
             mysql_connect('localhost', 'batdongsansthv8f', 'bf3021e4937d45ce5') or die("Can't connect to server");
             mysql_select_db('batdongsan_sth_vn_8f') or die("Can't connect database"); 
