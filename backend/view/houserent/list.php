@@ -140,14 +140,14 @@ $list = $model->getList($table, $offset, LIMIT, $arrCustom);
                         <td align="center"><?php echo date('d-m-Y H:i',$row['created_at']); ?></td>
                         <td align="center"><?php echo date('d-m-Y H:i',$row['updated_at']); ?></td>
                         <td style="white-space:nowrap">
-                            <a href="index.php?mod=houserent&act=view&id=<?php echo $row['id']; ?>" title="Xem chi tiết">
-                                <span class="glyphicon glyphicon-th-list"></span>
-                            </a>&nbsp;
-                            <a href="index.php?mod=houserent&act=form&id=<?php echo $row['id']; ?>">
-                                <i class="fa fa-fw fa-edit"></i>
+                            <a class="btn btn-sm btn-info" href="index.php?mod=houserent&act=view&id=<?php echo $row['id']; ?>" title="Xem chi tiết">
+                                Chi tiết
                             </a>
-                            <a href="javascript:;" alias="<?php echo $row['name']; ?>" id="<?php echo $row['id']; ?>" mod="house" class="link_delete" >
-                                <i class="fa fa-fw fa-trash-o"></i>
+                            <a href="index.php?mod=houserent&act=form&id=<?php echo $row['id']; ?>" class="btn btn-sm btn-warning">
+                                Chỉnh sửa
+                            </a>
+                            <a href="javascript:;" alias="<?php echo $row['name']; ?>" id="<?php echo $row['id']; ?>" mod="house" class="btn btn-sm btn-danger link_delete" >
+                                Xóa
                             </a>
 
                         </td>

@@ -76,7 +76,22 @@ if(!empty($roomateID)){
             
             <div class="clearfix"></div>
         <div class="nav-tabs-custom">
-            
+            <div class="col-md-6">
+            <div class="form-group" style="margin-top:15px">
+                <label>Trạng thái</label>
+                <?php if($detail['status']==1){ ?>
+                <select name="status" class="form-control">
+                    <option value="1" selected>Hiệu lực</option>
+                    <option value="2">Kết thúc</option>
+                </select>
+                <?php }else{ ?>
+                <label class="label label-danger">Đã kết thúc</label>
+                <input type="hidden" name="status" value="2">
+                <?php } ?>
+            </div>
+        </div>
+        <div class="col-md-6"></div>
+        <div class="clearfix"></div>
         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
           <div class="panel panel-default">
             <div class="panel-heading" role="tab" id="headingOne"  style="background-color:#b3d9ff;color:#FFF">
@@ -86,6 +101,7 @@ if(!empty($roomateID)){
                 </a>
               </h4>
             </div>
+            
             <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
               <div class="panel-body">
                 <div class="col-md-7" style="margin-top:20px">
@@ -446,8 +462,10 @@ if(!empty($roomateID)){
 
         </div><!-- nav-tabs-custom -->
         <div class="box-footer">
+            <?php if($detail['status']==1){ ?>
              <button class="btn btn-primary btnSave" type="submit">Save</button>
-             <button class="btn btn-primary" type="reset" onclick="location.href='index.php?mod=contract&act=list'">Cancel</button>
+             <?php } ?>
+             <button class="btn btn-primary" type="reset" onclick="location.href='index.php?mod=contract&act=list'">Back</button>
         </div>
         </div>
     </form>

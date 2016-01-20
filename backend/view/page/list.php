@@ -97,15 +97,15 @@ $arrList = $model->getListPage($offset, $limit);
                        
                         <td style="white-space:nowrap">                            
 
-                            <a href="index.php?mod=page&act=form&page_id=<?php echo $row['page_id']; ?>">
+                            <a href="index.php?mod=page&act=form&page_id=<?php echo $row['page_id']; ?>" class="btn btn-sm btn-warning">
 
-                                <i class="fa fa-fw fa-edit"></i>
+                                Chỉnh sửa
 
                             </a>
 
-                            <a href="javascript:;" alias="<?php echo $row['page_title_vi']; ?>" id="<?php echo $row['page_id']; ?>" mod="page" class="link_delete" >    
+                            <a href="javascript:;" alias="<?php echo $row['page_title_vi']; ?>" id="<?php echo $row['page_id']; ?>" mod="page" class="btn btn-sm btn-danger link_delete" >    
 
-                                <i class="fa fa-fw fa-trash-o"></i>
+                                Xóa
 
                             </a>    
 

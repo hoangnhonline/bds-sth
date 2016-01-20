@@ -22,8 +22,9 @@ if(isset($_GET['id'])){
         <!-- Custom Tabs -->
 
         <button class="btn btn-default btn-sm" onclick="location.href='index.php?mod=doanhthu&act=list&contract_id=<?php echo $contract_id; ?>'">Quay lại</button>
+        <?php if($detailHD['status']==1){ ?>
         <button class="btn btn-primary btn-sm" onclick="location.href='index.php?mod=doanhthu&act=form&id=<?php echo $id; ?>&contract_id=<?php echo $contract_id; ?>'">Chỉnh sửa</button>
-        
+        <?php } ?>
          
         <div style="clear:both;margin-bottom:10px"></div>
 

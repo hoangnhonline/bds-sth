@@ -116,14 +116,12 @@ $list = $model->getList($table, $offset, LIMIT, $arrCustom);
                         <td style="text-align:center"><?php echo date('d-m-Y', strtotime($row['end_date'])); ?></td>                        
                         <td style="white-space:nowrap">
                             <a class="btn btn-sm btn-success" href="index.php?mod=doanhthu&act=list&contract_id=<?php echo $row['id']; ?>" title="xem doanh thu">
-Xem doanh thu
+                                Xem doanh thu
                             </a>
-                            <a class="btn btn-sm btn-info" href="index.php?mod=contract&act=edit&id=<?php echo $row['id']; ?>">
-		Chỉnh sửa
+                            <a class="btn btn-sm btn-info" href="index.php?mod=contract&act=edit&id=<?php echo $row['id']; ?>" class="btn btn-sm btn-warning">
+		                          Chỉnh sửa
                             </a>
-                            <a class="btn btn-sm btn-danger" href="javascript:;" alias="<?php echo $row['code']; ?>" id="<?php echo $row['id']; ?>" mod="contract" class="link_delete" >
-Xóa
-                            </a>
+                            
 
                         </td>
                     </tr>

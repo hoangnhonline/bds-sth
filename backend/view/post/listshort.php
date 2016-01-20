@@ -312,13 +312,13 @@ $arrList = $model->getListTicket($nhaxe_id,$tinh_id_start,$tinh_id_end,$ngaydi,$
 
                             <a href="index.php?mod=ticket&act=form&ticket_id=<?php echo $row['ticket_id']; ?>">
 
-                                <i class="fa fa-fw fa-edit"></i>
+                                Chỉnh sửa
 
                             </a>
 
-                            <a href="javascript:;" alias="tất cả vé tương tự" id="<?php echo $row['key_all']; ?>" mod="ticketshort" class="link_delete" >    
+                            <a href="javascript:;" alias="tất cả vé tương tự" id="<?php echo $row['key_all']; ?>" mod="ticketshort" class="btn btn-sm btn-danger link_delete" >    
 
-                                <i class="fa fa-fw fa-trash-o"></i>
+                                Xóa
 
                             </a>    
 

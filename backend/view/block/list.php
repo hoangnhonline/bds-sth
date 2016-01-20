@@ -76,15 +76,15 @@ $arrList = $model->getListBlock();
 
                         <td style="white-space:nowrap">
 
-                            <a href="index.php?mod=block&act=form&block_id=<?php echo $row['block_id']; ?>">
+                            <a href="index.php?mod=block&act=form&block_id=<?php echo $row['block_id']; ?>" class="btn btn-sm btn-warning">
 
-                                <i class="fa fa-fw fa-edit"></i>
+                                Chỉnh sửa
 
                             </a>
 
-                            <a href="javascript:;" alias="<?php echo $row['block_name']; ?>" id="<?php echo $row['block_id']; ?>" mod="block" class="link_delete" >
+                            <a href="javascript:;" alias="<?php echo $row['block_name']; ?>" id="<?php echo $row['block_id']; ?>" mod="block" class="btn btn-sm btn-danger link_delete" >
 
-                                <i class="fa fa-fw fa-trash-o"></i>
+                                Xóa
 
                             </a>
 

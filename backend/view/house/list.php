@@ -143,11 +143,11 @@ $list = $model->getList($table, $offset, LIMIT, $arrCustom);
                             <a href="index.php?mod=house&act=view&id=<?php echo $row['id']; ?>" title="Xem chi tiết">
                                 <span class="glyphicon glyphicon-th-list"></span>
                             </a>&nbsp;
-                            <a href="index.php?mod=house&act=form&id=<?php echo $row['id']; ?>">
-                                <i class="fa fa-fw fa-edit"></i>
+                            <a href="index.php?mod=house&act=form&id=<?php echo $row['id']; ?>" class="btn btn-sm btn-warning">
+                                Chỉnh sửa
                             </a>
-                            <a href="javascript:;" alias="<?php echo $row['name']; ?>" id="<?php echo $row['id']; ?>" mod="house" class="link_delete" >
-                                <i class="fa fa-fw fa-trash-o"></i>
+                            <a href="javascript:;" alias="<?php echo $row['name']; ?>" id="<?php echo $row['id']; ?>" mod="house" class="btn btn-sm btn-danger link_delete" >
+                                Xóa
                             </a>
 
                         </td>

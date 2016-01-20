@@ -69,7 +69,7 @@ if($object_id > 0 && $object_type > 0){
             
             <div class="clearfix"></div>
         <div class="nav-tabs-custom">
-            
+            <input name="status" value="1" type="hidden" />
         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
           <div class="panel panel-default">
             <div class="panel-heading" role="tab" id="headingOne"  style="background-color:#b3d9ff;color:#FFF">
